@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="ImageClassificator.Pages.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:win="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls"
+    xmlns:ui="using:CommunityToolkit.WinUI"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <x:Double x:Key="CardSpacing">4</x:Double>
+        <Style x:Key="SectionHeaderTextBlockStyle" BasedOn="{StaticResource BodyStrongTextBlockStyle}" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="Margin" Value="1,30,0,6" />
+            </Style.Setters>
+        </Style>
+    </Page.Resources>
+    
+    <ScrollViewer>
+        <Grid>
+            <StackPanel MaxWidth="1000" HorizontalAlignment="Stretch" Spacing="{StaticResource CardSpacing}">
+
+                <TextBlock Style="{StaticResource SectionHeaderTextBlockStyle}" Text="Pfade" />
+
+                <controls:SettingsCard Description="C:\Eingabepfad"
+                                       Header="Eingabepfad"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xE1A5;}">
+
+                    <Button Content="Eingabepfad wählen" />
+
+                </controls:SettingsCard>
+
+                <controls:SettingsCard Description="C:\Eingabepfad"
+                                       Header="Verarbeitungspfad"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xE117;}">
+
+                    <Button Content="Verarbeitungspfad wählen" />
+
+                </controls:SettingsCard>
+
+                <controls:SettingsCard Description="C:\Eingabepfad"
+                                       Header="Ausgabepfad"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xE105;}">
+
+                    <Button Content="Ausgabepfad wählen" />
+
+                </controls:SettingsCard>
+
+                <TextBlock Style="{StaticResource SectionHeaderTextBlockStyle}" Text="Lokalisierung" />
+
+                <controls:SettingsCard Description="Wählen Sie, in welcher Sprache die Ergebnisse der Objektklassifizierung ausgegeben werden sollen."
+                                       Header="Sprache der Tags"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xE164;}">
+
+                    <ComboBox SelectedIndex="0">
+                        <x:String>Deutsch</x:String>
+                        <x:String>Englisch</x:String>
+                    </ComboBox>
+
+                </controls:SettingsCard>
+
+                <TextBlock Style="{StaticResource SectionHeaderTextBlockStyle}" Text="About" />
+
+                <controls:SettingsCard Description="© 2023 Ronny Hildebrandt"
+                                       Header="Image Classificator">
+                    
+                    <TextBlock win:IsTextSelectionEnabled="True" Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="Version 1.0.0" />
+                    
+                </controls:SettingsCard>
+                
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+
+</Page>

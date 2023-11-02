@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ImageClassificator (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ImageClassificator (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
