@@ -26,7 +26,7 @@ jobs:
         run: echo "::set-output name=version::$(python ./ImageClassificatorCLI/ImageClassificatorCLI.py --version)"
         id: version
       - name: Create executable
-        run: pyinstaller -w ./ImageClassificatorCLI/ImageClassificatorCLI.py
+        run: pyinstaller ./ImageClassificatorCLI/ImageClassificatorCLI.py
       - name: Copy content
         run: Copy-Item ./ImageClassificatorCLI/mobilenet -Destination ./dist/ImageClassificatorCLI -Recurse
       - name: Zip Folder
