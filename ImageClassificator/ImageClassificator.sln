@@ -7,14 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageClassificator", "Image
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ImageClassificatorCLI", "..\ImageClassificatorCLI\ImageClassificatorCLI.pyproj", "{0B7A7633-B61B-4A97-A578-64F59B1BB745}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{489BA442-1653-41B2-823D-D6D7E911F728}"
-	ProjectSection(SolutionItems) = preProject
-		..\README.md = ..\README.md
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2165722B-BBD0-4F7A-BF07-DCFD73DCC577}"
 	ProjectSection(SolutionItems) = preProject
 		..\.gitignore = ..\.gitignore
+		..\CHANGELOG.md = ..\CHANGELOG.md
+		..\.github\workflows\BuildingRelease.yml = ..\.github\workflows\BuildingRelease.yml
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
 Global

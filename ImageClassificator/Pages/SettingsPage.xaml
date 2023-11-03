@@ -25,6 +25,14 @@
 
                 <TextBlock Style="{StaticResource SectionHeaderTextBlockStyle}" Text="Pfade" />
 
+                <controls:SettingsCard Description="C:\Humpelpumpel.exe"
+                                       Header="Kommandozeilenprogramm"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xE756;}">
+
+                    <Button Content="Eingabepfad wählen" />
+
+                </controls:SettingsCard>
+
                 <controls:SettingsCard Description="C:\Eingabepfad"
                                        Header="Eingabepfad"
                                        HeaderIcon="{ui:FontIcon Glyph=&#xE1A5;}">

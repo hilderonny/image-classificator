@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Python virtual environments
+ImageClassificatorCLI/env
+
+build
+dist
+ImageClassificatorCLI/data
