@@ -1,7 +1,8 @@
 using ImageClassificator.Pages;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using System.Collections.ObjectModel;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -15,21 +16,13 @@ namespace ImageClassificator
     public sealed partial class MainWindow : Window
     {
 
-        ObservableCollection<Category> Categories { get; set; }
-
-        void InitializeCategories()
-        {
-            Categories = new ObservableCollection<Category>
-            {
-                new Category { Icon = Symbol.Home, Name = "Home", Page = typeof(HomePage) }
-            };
-            NavView.SelectedItem = Categories.First();
-        }
-
         public MainWindow()
         {
             InitializeComponent();
-            InitializeCategories();
+            var homeMenuItem = (NavigationViewItem)NavView.MenuItems.First();
+            NavView.Header = homeMenuItem.Content;
+            NavView.SelectedItem = homeMenuItem;
+            ContentFrame.Navigate(Type.GetType(homeMenuItem.Tag.ToString()));
         }
 
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
@@ -41,8 +34,8 @@ namespace ImageClassificator
             }
             else
             {
-                var selectedCategory = (Category)args.SelectedItem;
-                ContentFrame.Navigate(selectedCategory.Page);
+                var navPageType = Type.GetType(args.SelectedItemContainer.Tag.ToString());
+                ContentFrame.Navigate(navPageType);
             }
         }
 

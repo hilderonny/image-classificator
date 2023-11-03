@@ -3,18 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassificator", "ImageClassificator.csproj", "{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageClassificator", "ImageClassificator.csproj", "{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ImageClassificatorCLI", "..\ImageClassificatorCLI\ImageClassificatorCLI.pyproj", "{0B7A7633-B61B-4A97-A578-64F59B1BB745}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{489BA442-1653-41B2-823D-D6D7E911F728}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2165722B-BBD0-4F7A-BF07-DCFD73DCC577}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM64 = Debug|ARM64
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM64 = Release|ARM64
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Debug|Any CPU.Build.0 = Debug|x64
+		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Debug|Any CPU.Deploy.0 = Debug|x64
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Debug|ARM64.ActiveCfg = Debug|ARM64
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Debug|ARM64.Build.0 = Debug|ARM64
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Debug|ARM64.Deploy.0 = Debug|ARM64
@@ -24,6 +41,9 @@ Global
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Debug|x86.ActiveCfg = Debug|x86
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Debug|x86.Build.0 = Debug|x86
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Debug|x86.Deploy.0 = Debug|x86
+		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Release|Any CPU.ActiveCfg = Release|x64
+		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Release|Any CPU.Build.0 = Release|x64
+		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Release|Any CPU.Deploy.0 = Release|x64
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Release|ARM64.ActiveCfg = Release|ARM64
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Release|ARM64.Build.0 = Release|ARM64
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Release|ARM64.Deploy.0 = Release|ARM64
@@ -33,6 +53,14 @@ Global
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Release|x86.ActiveCfg = Release|x86
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Release|x86.Build.0 = Release|x86
 		{DF6434F5-A21A-413F-A37E-7F8E1FE5CDEB}.Release|x86.Deploy.0 = Release|x86
+		{0B7A7633-B61B-4A97-A578-64F59B1BB745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B7A7633-B61B-4A97-A578-64F59B1BB745}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{0B7A7633-B61B-4A97-A578-64F59B1BB745}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0B7A7633-B61B-4A97-A578-64F59B1BB745}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0B7A7633-B61B-4A97-A578-64F59B1BB745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B7A7633-B61B-4A97-A578-64F59B1BB745}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{0B7A7633-B61B-4A97-A578-64F59B1BB745}.Release|x64.ActiveCfg = Release|Any CPU
+		{0B7A7633-B61B-4A97-A578-64F59B1BB745}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
