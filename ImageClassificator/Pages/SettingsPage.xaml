@@ -23,50 +23,31 @@
         <Grid>
             <StackPanel MaxWidth="1000" HorizontalAlignment="Stretch" Spacing="{StaticResource CardSpacing}">
 
-                <TextBlock Style="{StaticResource SectionHeaderTextBlockStyle}" Text="Pfade" />
+                <TextBlock x:Uid="SettingsPaths" Style="{StaticResource SectionHeaderTextBlockStyle}" />
 
-                <controls:SettingsCard Description="C:\Humpelpumpel.exe"
-                                       Header="Kommandozeilenprogramm"
-                                       HeaderIcon="{ui:FontIcon Glyph=&#xE756;}">
+                <controls:SettingsCard x:Uid="SettingsInputPath" Name="SettingsInputPath" HeaderIcon="{ui:FontIcon Glyph=&#xE1A5;}">
 
-                    <Button Content="Eingabepfad wählen" />
+                    <Button x:Uid="SettingsSelectInputPathButton" Click="SettingsSelectInputPathButton_Click" />
 
                 </controls:SettingsCard>
 
-                <controls:SettingsCard Description="C:\Eingabepfad"
-                                       Header="Eingabepfad"
-                                       HeaderIcon="{ui:FontIcon Glyph=&#xE1A5;}">
+                <controls:SettingsCard x:Uid="SettingsProcessingPath" Name="SettingsProcessingPath" HeaderIcon="{ui:FontIcon Glyph=&#xE117;}">
 
-                    <Button Content="Eingabepfad wählen" />
+                    <Button x:Uid="SettingsSelectProcessingPathButton" Click="SettingsSelectProcessingPathButton_Click" />
 
                 </controls:SettingsCard>
 
-                <controls:SettingsCard Description="C:\Eingabepfad"
-                                       Header="Verarbeitungspfad"
-                                       HeaderIcon="{ui:FontIcon Glyph=&#xE117;}">
+                <controls:SettingsCard x:Uid="SettingsOutputPath" Name="SettingsOutputPath" HeaderIcon="{ui:FontIcon Glyph=&#xE105;}">
 
-                    <Button Content="Verarbeitungspfad wählen" />
+                    <Button x:Uid="SettingsSelectOutputPathButton" Click="SettingsSelectOutputPathButton_Click" />
 
                 </controls:SettingsCard>
 
-                <controls:SettingsCard Description="C:\Eingabepfad"
-                                       Header="Ausgabepfad"
-                                       HeaderIcon="{ui:FontIcon Glyph=&#xE105;}">
+                <TextBlock x:Uid="SettingsLocalization" Style="{StaticResource SectionHeaderTextBlockStyle}" />
 
-                    <Button Content="Ausgabepfad wählen" />
+                <controls:SettingsCard x:Uid="SettingsTagLanguage" HeaderIcon="{ui:FontIcon Glyph=&#xE164;}">
 
-                </controls:SettingsCard>
-
-                <TextBlock Style="{StaticResource SectionHeaderTextBlockStyle}" Text="Lokalisierung" />
-
-                <controls:SettingsCard Description="Wählen Sie, in welcher Sprache die Ergebnisse der Objektklassifizierung ausgegeben werden sollen."
-                                       Header="Sprache der Tags"
-                                       HeaderIcon="{ui:FontIcon Glyph=&#xE164;}">
-
-                    <ComboBox SelectedIndex="0">
-                        <x:String>Deutsch</x:String>
-                        <x:String>Englisch</x:String>
-                    </ComboBox>
+                    <ComboBox Name="SettingsTagLanguageComboBox" ItemsSource="{x:Bind Languages}" SelectedValuePath="Key" DisplayMemberPath="Value" SelectionChanged="SettingsTagLanguageComboBox_SelectionChanged" />
 
                 </controls:SettingsCard>
 

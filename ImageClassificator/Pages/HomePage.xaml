@@ -36,13 +36,13 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <TextBlock x:Uid="HomeInputPath" Grid.Column="0" Grid.Row="0" Margin="0,0,10,0" />
-                    <TextBlock Grid.Column="1" Grid.Row="0"><Hyperlink>XXXXXXXXXXXXXXXXXX</Hyperlink></TextBlock>
+                    <TextBlock Name="HomeInputPathText" Grid.Column="1" Grid.Row="0" />
                     <TextBlock x:Uid="HomeProcessingPath" Grid.Column="0" Grid.Row="1" Margin="0,0,10,0" />
-                    <TextBlock Grid.Column="1" Grid.Row="1"><Hyperlink>XXXXXXXXXXXXXXXXXX</Hyperlink></TextBlock>
+                    <TextBlock Name="HomeProcessingPathText" Grid.Column="1" Grid.Row="1" />
                     <TextBlock x:Uid="HomeOutputPath" Grid.Column="0" Grid.Row="2" Margin="0,0,10,0" />
-                    <TextBlock Grid.Column="1" Grid.Row="2"><Hyperlink>XXXXXXXXXXXXXXXXXX</Hyperlink></TextBlock>
+                    <TextBlock Name="HomeOutputPathText" Grid.Column="1" Grid.Row="2" />
                     <TextBlock x:Uid="HomeTagLanguage" Grid.Column="0" Grid.Row="3" Margin="0,0,10,0" />
-                    <TextBlock Text="XXXXXXXXXXXXXXXXXX" Grid.Column="1" Grid.Row="3" />
+                    <TextBlock Name="HomeTagLanguageText" Grid.Column="1" Grid.Row="3" />
                 </Grid>
 
                 <TextBlock Style="{StaticResource SectionHeaderTextBlockStyle}" x:Uid="HomeBackgroundProcess" />

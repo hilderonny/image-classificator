@@ -1,5 +1,3 @@
-PROGRAM_VERSION = '1.0.0'
-
 import datetime
 import shutil
 import stat
@@ -15,7 +13,6 @@ parser.add_argument('--processingpath', '-p', type=str, action='store', required
 parser.add_argument('--outputpath', '-o', type=str, action='store', required=True, help='Directory where the output JSON files will be stored. Must be writable.')
 parser.add_argument('--mobilenetpath', '-m', type=str, action='store', required=True, help='Directory where the MobileNetV3 Model and settingsa are stored.')
 parser.add_argument('--language', '-l', type=str, default='en', action='store', help='Language of the output tags. Can be "en" (default) or "de".')
-parser.add_argument('--version', '-v', action='version', version=PROGRAM_VERSION)
 args = parser.parse_args()
 
 # Check write access to directories

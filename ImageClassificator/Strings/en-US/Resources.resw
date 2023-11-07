@@ -150,7 +150,34 @@
   <data name="NavigationView.PaneTitle" xml:space="preserve">
     <value>Image Classificator</value>
   </data>
+  <data name="SettingsInputPath.Header" xml:space="preserve">
+    <value>Input path</value>
+  </data>
+  <data name="SettingsLocalization.Text" xml:space="preserve">
+    <value>Localization</value>
+  </data>
+  <data name="SettingsOutputPath.Header" xml:space="preserve">
+    <value>Output path</value>
+  </data>
   <data name="SettingsPaths.Text" xml:space="preserve">
     <value>Paths</value>
+  </data>
+  <data name="SettingsProcessingPath.Header" xml:space="preserve">
+    <value>Processing path</value>
+  </data>
+  <data name="SettingsSelectInputPathButton.Content" xml:space="preserve">
+    <value>Select input path</value>
+  </data>
+  <data name="SettingsSelectOutputPathButton.Content" xml:space="preserve">
+    <value>Select output path</value>
+  </data>
+  <data name="SettingsSelectProcessingPathButton.Content" xml:space="preserve">
+    <value>Select processing path</value>
+  </data>
+  <data name="SettingsTagLanguage.Description" xml:space="preserve">
+    <value>Choose the language of the tags in the processing output</value>
+  </data>
+  <data name="SettingsTagLanguage.Header" xml:space="preserve">
+    <value>Tag language</value>
   </data>
 </root>

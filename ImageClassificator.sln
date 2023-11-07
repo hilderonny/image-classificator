@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2165722B-BBD0-4F7A-BF07-DCFD73DCC577}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		CHANGELOG.md = CHANGELOG.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageClassificator", "ImageClassificator\ImageClassificator.csproj", "{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|Any CPU.Build.0 = Debug|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|ARM64.Build.0 = Debug|ARM64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|x64.ActiveCfg = Debug|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|x64.Build.0 = Debug|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|x64.Deploy.0 = Debug|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|x86.ActiveCfg = Debug|x86
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|x86.Build.0 = Debug|x86
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Debug|x86.Deploy.0 = Debug|x86
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|Any CPU.ActiveCfg = Release|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|Any CPU.Build.0 = Release|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|Any CPU.Deploy.0 = Release|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|ARM64.ActiveCfg = Release|ARM64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|ARM64.Build.0 = Release|ARM64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|ARM64.Deploy.0 = Release|ARM64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|x64.ActiveCfg = Release|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|x64.Build.0 = Release|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|x64.Deploy.0 = Release|x64
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|x86.ActiveCfg = Release|x86
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|x86.Build.0 = Release|x86
+		{27774C19-BE6E-4B59-99AC-6EE48F7CCE16}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F049777-20AE-437F-A2F0-B6B117B7640C}
+	EndGlobalSection
+EndGlobal

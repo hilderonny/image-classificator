@@ -117,7 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="HomeBackgroundProcess.Text" xml:space="preserve">
+    <value>Hintergrundprozess</value>
+  </data>
   <data name="HomeCurrentSettings.Text" xml:space="preserve">
-    <value>Aktuelle Einstellungen</value>
+    <value>Aktuelle Einstallungen</value>
+  </data>
+  <data name="HomeInputPath.Text" xml:space="preserve">
+    <value>Eingabepfad:</value>
+  </data>
+  <data name="HomeMenuItem.Content" xml:space="preserve">
+    <value>Startseite</value>
+  </data>
+  <data name="HomeOutputPath.Text" xml:space="preserve">
+    <value>Ausgabepfad:</value>
+  </data>
+  <data name="HomeProcessingPath.Text" xml:space="preserve">
+    <value>Verarbeitungspfad:</value>
+  </data>
+  <data name="HomeSettingsExpanderStopped.Header" xml:space="preserve">
+    <value>Gestoppt</value>
+  </data>
+  <data name="HomeStartStopButtonStart.Content" xml:space="preserve">
+    <value>Starten</value>
+  </data>
+  <data name="HomeStartStopButtonStop.Content" xml:space="preserve">
+    <value>Stoppen</value>
+  </data>
+  <data name="HomeTagLanguage.Text" xml:space="preserve">
+    <value>Sprache der Tags:</value>
+  </data>
+  <data name="NavigationView.PaneTitle" xml:space="preserve">
+    <value>Image Classificator</value>
+  </data>
+  <data name="SettingsInputPath.Header" xml:space="preserve">
+    <value>Eingabepfad</value>
+  </data>
+  <data name="SettingsLocalization.Text" xml:space="preserve">
+    <value>Lokalisierung</value>
+  </data>
+  <data name="SettingsOutputPath.Header" xml:space="preserve">
+    <value>Ausgabepfad</value>
+  </data>
+  <data name="SettingsPaths.Text" xml:space="preserve">
+    <value>Pfade</value>
+  </data>
+  <data name="SettingsProcessingPath.Header" xml:space="preserve">
+    <value>Verarbeitungspfad</value>
+  </data>
+  <data name="SettingsSelectInputPathButton.Content" xml:space="preserve">
+    <value>Eingabepfad wählen</value>
+  </data>
+  <data name="SettingsSelectOutputPathButton.Content" xml:space="preserve">
+    <value>Ausgabepfad wählen</value>
+  </data>
+  <data name="SettingsSelectProcessingPathButton.Content" xml:space="preserve">
+    <value>Verarbeitungspfad wählen</value>
+  </data>
+  <data name="SettingsTagLanguage.Description" xml:space="preserve">
+    <value>Wählen Sie die Sprache der Klassifizierungsergebnisse</value>
+  </data>
+  <data name="SettingsTagLanguage.Header" xml:space="preserve">
+    <value>Sprache der Tags</value>
   </data>
 </root>
