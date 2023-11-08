@@ -1,0 +1,84 @@
+name: .NET Core Desktop
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    strategy:
+      matrix:
+        configuration: [Release]
+
+    runs-on: windows-latest  
+
+    env:
+      Solution_Name: ImageClassificator.sln
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    # Install the .NET Core workload
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    # Restore the application to populate the obj folder with RuntimeIdentifiers
+    - name: Restore the application
+      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
+      env:
+        Configuration: ${{ matrix.configuration }}
+
+    # Create the app package by building and packaging the Windows Application Packaging project
+    - name: Create the app
+      run: msbuild $env:Solution_Name /p:Configuration=$env:Configuration
+      env:
+        Configuration: ${{ matrix.configuration }}
+
+    # Determine app version
+    - name: Determine app version
+      id: package_version
+      uses: KageKirin/get-csproj-version@v1.0.0
+      with:
+        file: ImageClassificator/ImageClassificator.csproj
+
+    - name: Copy MobileNet
+      run: Copy-Item ./mobilenet -Destination ./ImageClassificator/bin/Release/net6.0-windows -Recurse
+    - name: Copy Python scripts
+      run: Copy-Item ./Scripts -Destination ./ImageClassificator/bin/Release/net6.0-windows -Recurse
+    - name: Zip Folder
+      run: Compress-Archive -Path ./ImageClassificator/bin/Release/net6.0-windows/* -DestinationPath ./ImageClassificator.zip        
+
+    - name: Create release
+      uses: actions/create-release@v1
+      id: create_release
+      with:
+        draft: false
+        prerelease: false
+        release_name: ${{ steps.package_version.version }}
+        tag_name: v${{ steps.package_version.version }}
+        body_path: CHANGELOG.md
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+
+    - name: Upload artifacts to release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./ImageClassificator.zip
+        asset_name: ImageClassificator_${{ steps.package_version.version }}.zip
+        asset_content_type: application/zip
