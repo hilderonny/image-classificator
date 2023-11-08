@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+- Switched to WinForms
+- First working version
+
 ## 1.1.0
 - Remove PyInstaller from requirements
 - Added german translation to UI elements

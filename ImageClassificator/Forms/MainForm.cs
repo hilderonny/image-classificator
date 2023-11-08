@@ -1,5 +1,6 @@
 ﻿
 using System.Diagnostics;
+using System.Reflection;
 
 namespace ImageClassificator.Forms
 {
@@ -14,6 +15,9 @@ namespace ImageClassificator.Forms
             synchronizationContext = SynchronizationContext.Current;
             InitializeComponent();
             LoadSettings();
+
+            Version? version = Assembly.GetExecutingAssembly().GetName().Version;
+            Text += " " + version?.Major + "." + version?.Minor + "." + version?.Build;
         }
 
         private void LoadSettings()
