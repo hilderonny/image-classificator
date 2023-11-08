@@ -74,5 +74,5 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./ImageClassificator.zip
-        asset_name: ImageClassificator_${{ steps.package_version.version }}.zip
+        asset_name: ImageClassificator_${{ steps.version.outputs.version }}.zip
         asset_content_type: application/zip
