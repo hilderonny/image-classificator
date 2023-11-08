@@ -21,11 +21,31 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="mobilenet\imagenet.de.names" />
+    <None Remove="mobilenet\imagenet.en.names" />
+    <None Remove="mobilenet\keras\imagenet_class_index.json" />
+    <None Remove="mobilenet\keras\keras.json" />
+    <None Remove="mobilenet\mobilenetv3large_model.h5" />
     <None Remove="Scripts\ImageClassificatorCLI.py" />
     <None Remove="Scripts\requirements.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="mobilenet\imagenet.de.names">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mobilenet\imagenet.en.names">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mobilenet\keras\imagenet_class_index.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mobilenet\keras\keras.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mobilenet\mobilenetv3large_model.h5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Scripts\ImageClassificatorCLI.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

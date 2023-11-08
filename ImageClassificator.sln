@@ -7,11 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		CHANGELOG.md = CHANGELOG.md
+		.github\workflows\dotnet-desktop.yml = .github\workflows\dotnet-desktop.yml
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassificator", "ImageClassificator\ImageClassificator.csproj", "{9E3CEBFE-5B67-402B-BF03-65A56C7A444F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageClassificator", "ImageClassificator\ImageClassificator.csproj", "{9E3CEBFE-5B67-402B-BF03-65A56C7A444F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
