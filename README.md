@@ -1,24 +1,30 @@
 # image-classificator
 
-Background worker with graphical user interface for classifying images dropped in a folder. This project consists of two parts:
+Background worker for classifying images dropped in a folder.
 
-1. **ImageClassificatorCLI** - Python command line executable which can be run via console and which is used by the graphical part below
-1. **ImageClassificator** - Graphical windows application for easy configuration of the command line interface
+## Setup
 
-## Installation and running
+1. Install Python 3.11 from https://www.python.org/downloads/windows/
+1. Clone the repository
+1. Open Terminal in the root folder of the repository and run `pip install -r .\requirements.txt`
 
-1. Download and install the Visual C++ Redistributables from https://aka.ms/vs/17/release/vc_redist.x64.exe
-1. Download and extract the latest release of this software from https://github.com/hilderonny/image-classificator/releases
+## Usage
 
+```
+python image-classificator.py [-h] --inputpath INPUTPATH --processingpath PROCESSINGPATH --outputpath OUTPUTPATH --mobilenetpath MOBILENETPATH [--language LANGUAGE] [--version]
+```
 
-## Development setup
+### Options
+- `-h`, `--help`: show this help message and exit
+- `--inputpath INPUTPATH`, `-i INPUTPATH`: Directory where the images to process are obtained from. Must be writable.
+- `--processingpath PROCESSINGPATH`, `-p PROCESSINGPATH`: Directory where the currently processed image gets stored. Must be writable.
+- `--outputpath OUTPUTPATH`, `-o OUTPUTPATH`: Directory where the output JSON files will be stored. Must be writable.
+- `--mobilenetpath MOBILENETPATH`, `-m MOBILENETPATH`: Directory where the MobileNetV3 Model and settings are stored.
+- `--language LANGUAGE`, `-l LANGUAGE`: Language of the output tags. Can be `en` (default) or `de`.
+- `--version`, `-v`: show program's version number and exit
 
-1. Install Visual Studio Community 2022 from https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes
-1. Select
-	1. Workload **.NET Desktop** with *Windows App SDK C# Templates*
-	1. Workload **Python**
-	1. Component **Windows 10 SDK (10.0.190412.0)**
-1. Install Python 3.11 from https://www.python.org/downloads/windows/ into the **./ImageClassificatorCLI/python** folder
-1. Open the solution **ImageClassificator/ImageClassificator.sln**
-1. Right click on the solution in the solution explorer and run **Restore NuGet Packages**
-1. Open Terminal in the folder **./ImageClassificatorCLI/python** of the repository and run `.\python install -r ..\requirements.txt`
+## Example
+
+```
+python image-classificator.py -i ./data/input -p ./data/processing -o ./data/output -m ./mobilenet -l de
+```

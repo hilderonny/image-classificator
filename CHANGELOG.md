@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0
+- Switched back to command line completely
+- Removed WinForms app
+- Removed GitHub workflow
+
 ## 1.2.0
 - Switched to WinForms
 - First working version
